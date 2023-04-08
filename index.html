@@ -15,28 +15,26 @@
     <div class="header-background">
         <nav class="nav">
             <ul class="nav-tags">
-                <img class="header-logo" src="images/logo-no-background.png">
+                <img class="header-logo" 
+                src="images/logo-no-background.png"
+                data-version-number = '3.0'
+                >
                 <li class="nav-items">
                     <a class="nav__link" href="#section--1">Home</a>
                   </li>
                   <li class="nav-items">
-                    <a class="nav__link" href="#section--2">Destination</a>
+                    <a class="nav__link" href="#section--1">Destination</a>
                   </li>
                   <li class="nav-items">
-                    <a class="nav__link" href="#section--4">Events</a>
+                    <a class="nav__link" href="#section--2">Events</a>
                   </li>
                   <li class="nav-items">
-                    <a class="nav__link" href="#section--5">Blog</a>
+                    <a class="nav__link" href="#section--2">Blog</a>
                   </li>
                   <li class="nav-items">
-                    <a class="nav__link" href="#section--6">Galery</a>
+                    <a class="nav__link" href="#section--2">Reservation</a>
                   </li>
-                  <li class="nav-items">
-                    <a class="nav__link" href="#section--7">About</a>
-                  </li>
-                  <li class="nav-items">
-                    <a class="nav__link" href="#section--8">Contact us</a>
-                  </li>
+                 
                    <li class="nav-items">
                     <a class="nav__link nav__link--btn btn--show-modal" href="#"
                       >Sign up</a
@@ -53,7 +51,7 @@
               </h1>
               <p>Book unique camping experiences on over 300,000 campsites, cabins,</p>
               <p>RV parks, public parks and more.</p>
-              <button class="middle-btn all-btn">Discover</button>   
+              <button class="middle-btn btn-scroleTo">Discover</button>   
           </div>
 
           <div class="row">
@@ -267,5 +265,22 @@
         <img class="footer-logo" src="images/logo-no-background.png" />
         <p>Created by Tornike Ozbetelashvili</p>
       </footer>
+
+      <div class="modal hidden">
+        <button class="btn--close-modal">&times;</button>
+        <h2 class="modal__header">
+            Open your account<br />
+            to book a <span class="highlight">tour</span>
+        </h2>
+        <form class="modal__form">
+          <input placeholder="First name" type="text" />
+          <input placeholder="Last name" type="text" />
+          <input placeholder="email" type="email" />
+          <button class="middle-btn">log in &rarr;</button>
+        </form>
+      </div>
+      <div class="overlay hidden"></div>
+
+      <script src="script.js"></script>
 </body>
 </html>
