@@ -10,6 +10,11 @@ const navLinks = document.querySelectorAll('.nav__link')
 
 const btnScrollTo = document.querySelector('.btn-scroleTo')
 
+//tabs
+const tabs = document.querySelectorAll('.operations__tab');
+const tabsContainer = document.querySelector('.operations__tab-container');
+const tabContent = document.querySelectorAll('.operations__content')
+
 
 const openModal = function(e){
     e.preventDefault();
@@ -50,6 +55,50 @@ document.querySelector('.nav-tags').addEventListener('click',function(e){
         document.querySelector(id).scrollIntoView({behavior:'smooth'})
     }
 })
+
+
+// const tabs = document.querySelectorAll('.operations__tab');
+// const tabsContainer = document.querySelector('.operations__tab-container');
+// const tabContent = document.querySelector('.operations__content')
+
+tabsContainer.addEventListener('click',function(e){
+     const clicked = e.target.closest('.operations__tab');
+     
+     if(!clicked) return;
+     tabs.forEach(tab=> tab.classList.remove('operations__tab--active'))
+     tabContent.forEach(content=> content.classList.remove(`operations__content--active`))
+     clicked.classList.add('operations__tab--active')
+
+     document.querySelector(`.operations__content--${clicked.dataset.tab}`).classList.add('operations__content--active')
+     
+})
+
+
+
+
+
+
+
+
+
+
+
+
+// const h1 = document.querySelector('.middle-header');
+
+// // ეს ამოწმებს ნებისმიერ ძმა ელემენტს რომელიც მის წინ არის.
+// console.log(h1.previousElementSibling);
+// // ეს ამოწმებს ნებისმიერ ძმა ელემენტს რომელიც მის შემდეგ არის.
+// console.log(h1.nextElementSibling);
+
+// console.log(h1.parentElement);
+
+// [...h1.parentElement.children].forEach((el)=>{
+//     if(h1 !== el) el.style.transform = `scale(0.5)`
+// })
+
+
+
 
 
 
