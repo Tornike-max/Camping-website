@@ -4,6 +4,7 @@ const btnCloseModal = document.querySelector('.btn--close-modal');
 const btnOpenModal = document.querySelector('.btn--show-modal');
 const allSection = document.querySelectorAll('.section')
 const section1 = document.querySelector('#section--1')
+const header = document.querySelector('.header-background');
 
 const nav = document.querySelector('.nav');
 const navLinks = document.querySelectorAll('.nav__link')
@@ -31,6 +32,65 @@ const closeModal = function(e){
 btnOpenModal.addEventListener('click',openModal);
 btnCloseModal.addEventListener('click',closeModal);
 overlay.addEventListener('click',closeModal);
+
+
+nav.addEventListener('mouseover', function(e){
+    if(e.target.classList.contains('nav__link')){
+        const link = e.target;
+        const siblings = link.closest('.nav').querySelectorAll('.nav__link');
+        const logo = link.closest('.nav').querySelector('img')
+
+        siblings.forEach(function(el){
+            if(el !== link){
+                el.style.opacity = 0.5;
+                el.style.transition = '0.5s'
+            }
+        })
+        logo.style.opacity = 0.5
+        logo.style.transition = '0.5s'
+    }
+})
+
+nav.addEventListener('mouseout', function(e){
+    if(e.target.classList.contains('nav__link')){
+        const link = e.target;
+        const siblings = link.closest('.nav').querySelectorAll('.nav__link');
+        const logo = link.closest('.nav').querySelector('img')
+
+        siblings.forEach(function(el){
+            if(el !== link){
+                el.style.opacity = 1;
+                el.style.transition = '0.5s'
+            }
+        })
+        logo.style.opacity = 1;
+        logo.style.transition = '0.5s'
+    }
+})
+
+
+
+const navHeight = nav.getBoundingClientRect().height;
+const fixedNav = function(entries){
+    const [entry] = entries;
+    console.log(entry);
+    if(entry.isIntersecting === false){
+        nav.classList.add('fixed');
+        nav.style.transition = '0.5s';
+    }else{
+        nav.classList.remove('fixed');
+        
+    }
+}
+
+const observer = new IntersectionObserver(fixedNav,{
+    root:null,
+    threshold:0,
+    rootMargin:`${navHeight}px`, 
+})
+observer.observe(header)
+
+
 
 
 
@@ -74,6 +134,42 @@ tabsContainer.addEventListener('click',function(e){
 })
 
 
+const sectionFunction = function(entries,observer){
+    const[entry] = entries;
+    if(!entry.isIntersecting) return;
+    entry.target.classList.remove('section-hidden')
+    observer.unobserve(entry.target)
+}
+
+const sectionObserver = new IntersectionObserver(
+    sectionFunction,{
+        root:null,
+        threshold:0.15,
+    }
+)
+
+allSection.forEach(s=>{
+    sectionObserver.observe(s)
+    s.classList.add('section-hidden')
+})
+
+
+const imgTargets = document.querySelectorAll('img[data-src]');
+console.log(imgTargets)
+
+let imgObsFunc = function(entries,observer){
+    const[entry] = entries
+    console.log('entries',entry)
+    entry.target.src = entry.target.dataset.src
+    entry.target.classList.remove('blur-image')
+}
+
+let imgObserver = new IntersectionObserver(imgObsFunc,{
+    root:null,
+    threshold:0,
+});
+
+imgTargets.forEach(img=> imgObserver.observe(img));
 
 
 
@@ -82,6 +178,21 @@ tabsContainer.addEventListener('click',function(e){
 
 
 
+
+// const cords = section1.getBoundingClientRect();
+// console.log(cords)
+
+// console.log(window.scrollY)
+// window.addEventListener('scroll', function(){
+//     if(window.scrollY > cords.top){
+//         nav.classList.add('fixed');
+//         nav.style.transition = '0.3s';
+//     } else{
+//         nav.classList.remove('fixed');
+//         nav.style.transition = '0.3s';
+//     }
+     
+// })
 
 
 // const h1 = document.querySelector('.middle-header');

@@ -567,6 +567,19 @@ p{
     font-size: 25px;
 }
 
+.fixed{
+    position:fixed;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.section-hidden{
+    opacity:0;
+    transform:translateY(8rem)
+}
+
+.blur-image{
+    filter:blur(20px)
+}
 
 
 
