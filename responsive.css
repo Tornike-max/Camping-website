@@ -296,8 +296,8 @@
     }
     
     .email-div input {
-        padding: 6px;
-        font-size: 12px;
+        padding: 5px;
+        font-size: 8px;
     }
     
     .email-div h2 {
@@ -533,11 +533,7 @@
         height: 100px;
     }
     
-    .em-inp {
-        padding: 6px;
-        font-size:7px;
-    }
-    
+   
     .email-div h2 {
         font-size: 8px;
     }
@@ -608,6 +604,223 @@
 
     .footer p{
         font-size:12px;
+    }
+  }
+  
+
+
+
+  @media only screen and (max-width: 485px) {
+
+    .header-background {
+        height: 350px;
+    }
+
+
+    .header-logo {
+        height: 25px;
+    } 
+    
+    nav a {
+        font-size: 7px;
+    }
+    
+    .nav__link--btn {
+        padding: 2px 3px;
+    } 
+
+    .row{
+        bottom: -190px;
+    }
+    
+    .row-row {
+        max-width: 90px;
+        width: 100%;
+        height: 102px;
+      }
+    .row-img {
+        width: 12px;
+    }
+    .row-row h2 {
+        font-size: 6px;
+    }
+    
+    .row-row p {
+        font-size: 5px;      
+    }
+
+    .middle-text {
+        max-width: 328px;
+        height: 100px;
+    }
+    
+    .middle-header {
+        font-size: 15px;
+    }
+    
+    .middle-text p {
+        font-size: 8px;
+    }
+    
+    .middle-btn {
+        font-size:5px;
+    }
+
+    .section-logo {
+        height: 30px;
+    }
+    
+    .section--header {
+        font-size: 12px;
+    }
+
+    .price-grid {
+        height: 560px;
+    }
+    
+    .card {
+        max-width: 100px;
+        width: 100%;
+        height: 150px;
+    }
+    
+    .card-img {
+        max-width: 80px;
+        width: 100%;
+        height: 55px;
+    }
+    
+    .card-button {
+        display: none;
+    }
+    
+    
+    .card p {
+        display: none;
+    }
+    
+    .card-header {
+        
+        display: none;
+    }
+    
+    .card-header-h2 {
+        display: none;
+    }
+    
+    .btn-card {
+        padding:4px 10px;
+        font-size: 4px;
+    }
+
+    .operations {
+        max-width: 50rem;
+    }
+
+    .operations p{
+        font-size:5px;
+    }
+
+    .btn {
+        font-size: 0.5rem;
+        padding: 0.3rem 2.1rem;
+    }
+    
+    .operations__tab {
+        font-size: 6px;
+        padding: 4px 14px;
+    }
+    
+    
+    .operations__content {
+        font-size: 0.5rem;
+        padding: 1.5rem 4rem 5rem 4rem;
+    }
+
+    
+    .operations__header {
+        font-size:6px;
+    }
+
+    .section--header {
+        font-size: 7px;
+    }
+
+    
+    .email-header-div {
+        max-width: 140px;
+        width: 100%;
+        height: 80px;
+    }
+    
+    .email-div img {
+        max-width: 100px;
+        width: 100%;
+        height: 70px;
+    }
+    
+   
+    .email-div h2 {
+        font-size: 6px;
+    }
+    
+    .email-div p {
+        font-size: 5px;
+    }
+
+    .email-div{
+        max-width:210px;
+        height:150px;
+    }
+
+
+    .slider{
+        max-width: 25rem;
+        height: 150px;
+    }
+    
+    .slide {
+        width: 100%;
+        height: 150px;
+    }
+    
+    
+    .slider__btn--left {
+        left: 6%;
+        transform: translate(-20%, -20%);
+    }
+    
+    .slider__btn--right {
+        right: 6%;
+        transform: translate(20%, -20%);
+    }
+    
+    .slider__btn {
+        height: 1rem;
+        width: 1rem;
+        font-size: 10px;
+    }
+
+    .img-slide {
+        max-width: 200px;
+        width: 100%;
+        height: 80px;
+    }
+
+    .section-feature{
+       font-size: 7px ;
+    }
+    
+    .footer-logo {
+        height:25px;
+    }
+
+    .footer__item {
+        font-size:5px;
+    }
+
+    .footer p{
+        font-size:5px;
     }
   }
   
