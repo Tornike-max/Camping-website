@@ -1,0 +1,613 @@
+
+
+@media only screen and (max-width: 1122px){
+    /* header */
+    .header-logo {
+        margin-top: 25px;
+        height: 60px;
+    }
+    
+    .nav {
+        height: 6rem;
+    }
+    
+    nav a {
+        font-size: 15px;
+    }
+    
+    .nav__link--btn {
+        padding: 7px 7px;
+    } 
+    
+    .nav__link--btn {
+        padding: 7px 7px;
+    }
+
+
+
+    /* rows */
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 60px;
+      }
+    .row-row {
+        max-width: 220px;
+        width: 100%;
+        height: 202px;
+        margin-bottom: 0;
+        text-align: center;
+      }
+    .row-img {
+        width: 40px;
+        height: auto;
+    }
+    .row-row h2 {
+        font-size: 15px;
+    }
+    
+    .row-row p {
+        font-size: 12px;      
+    }
+
+    .middle-text {
+        max-width: 628px;
+        width: 100%;
+        height: 300px;
+    }
+    
+    .middle-header {
+        font-size: 45px;
+    }
+    
+    .middle-text p {
+        font-size: 15px;
+    }
+    
+    .middle-btn {
+        padding: 7px 25px;
+    }
+
+    /* cards */
+    
+    .section-logo {
+        height: 70px;
+    }
+    
+    .section--header {
+        font-size: 30px;
+    }
+    
+    .card {
+        max-width: 200px;
+        width: 100%;
+        height: 380px;
+    }
+    
+    .card-img {
+        max-width: 145px;
+        width: 100%;
+        height: 110px;
+    }
+    
+    .card-button {
+        max-width: 80px;
+        width: 100%;
+        height: 20px;
+    }
+    
+    .card-button h2 {
+        font-size: 15px;
+    }
+    
+    .card p {
+        font-size: 13px;
+    }
+    
+    .card-header {
+        max-width: 190px;
+        width: 100%;
+        height: 170px;
+    }
+    
+    .card-header-h2 {
+        font-size: 15px;
+    }
+    
+    .btn-card {
+        padding: 5px 23px;
+    }
+    
+    
+}
+  
+
+  @media only screen and (max-width: 883px) {
+
+    .toggle-button{
+        display: block;
+    }
+
+    .nav {
+        height: 4rem;
+        display:none;
+    }
+
+    .nav-tags{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header-logo {
+        margin-top: 25px;
+        height: 40px;
+    }
+    
+    
+    nav a {
+        font-size: 11px;
+    }
+    
+    .nav__link--btn {
+        padding: 5px 5px;
+    } 
+
+    
+
+    .header-logo {
+        margin-top: 20px;
+        height: 30px;
+    }
+    
+    .row {
+        margin-top: 40px;
+      }
+    .row-row {
+        max-width: 160px;
+        width: 100%;
+        height: 132px;
+      }
+    .row-img {
+        width: 25px;
+        height: auto;
+    }
+    .row-row h2 {
+        font-size: 10px;
+    }
+    
+    .row-row p {
+        font-size: 8px;      
+    }
+
+    .middle-text {
+        max-width: 468px;
+        width: 100%;
+        height: 220px;
+    }
+    
+    .middle-header {
+        font-size: 28px;
+    }
+    
+    .middle-text p {
+        font-size: 10px;
+    }
+    
+    .middle-btn {
+        padding: 3px 15px;
+    }
+
+    .section-logo {
+        height: 50px;
+    }
+    
+    .section--header {
+        font-size: 25px;
+    }
+    
+    .card {
+        max-width: 180px;
+        width: 100%;
+        height: 330px;
+    }
+    
+    .card-img {
+        max-width: 125px;
+        width: 100%;
+        height: 80px;
+    }
+    
+    .card-button {
+        max-width: 60px;
+        width: 100%;
+        height: 15px;
+    }
+    
+    .card-button h2 {
+        font-size: 12px;
+    }
+    
+    .card p {
+        font-size: 10px;
+    }
+    
+    .card-header {
+        max-width: 160px;
+        width: 100%;
+        height: 140px;
+    }
+    
+    .card-header-h2 {
+        font-size: 12px;
+    }
+    
+    .btn-card {
+        padding: 4px 20px;
+    }
+
+    .operations {
+        max-width: 90rem;
+        margin: 10rem auto 0 auto;
+    }
+
+    .operations p{
+        font-size:16px;
+    }
+
+    .btn {
+        font-size: 1rem;
+        padding: 1rem 3.5rem;
+    }
+    
+    .operations__tab {
+        font-size: 15px;
+        padding: 10px 25px;
+    }
+    
+    
+    .operations__content {
+        font-size: 1.4rem;
+        padding: 2.2rem 6rem 6.2rem 6rem;
+    }
+
+    .operations p{
+        font-size:12px;
+    }
+    
+    
+    .operations__header {
+        font-size:20px;
+    }
+
+
+    
+    .email-header-div {
+        max-width: 250px;
+        width: 100%;
+        height: 160px;
+    }
+    
+    .email-div img {
+        max-width: 200px;
+        width: 100%;
+        height: 160px;
+    }
+    
+    .email-div input {
+        padding: 6px;
+        font-size: 12px;
+    }
+    
+    .email-div h2 {
+        font-size: 15px;
+    }
+    
+    .email-div p {
+        font-size: 13px;
+    }
+
+
+    .slider{
+        max-width: 45rem;
+        height: 300px;
+    }
+    
+    .slide {
+        width: 100%;
+        height: 280px;
+    }
+    
+    
+    .slider__btn--left {
+        left: 6%;
+        transform: translate(-20%, -20%);
+    }
+    
+    .slider__btn--right {
+        right: 6%;
+        transform: translate(20%, -20%);
+    }
+    
+    .slider__btn {
+        position: absolute;
+        top: 45%;
+        z-index: 10;
+        border: none;
+        background-color:#E76F51;
+        font-family: inherit;
+        color: #333;
+        border-radius: 50%;
+        height: 2.5rem;
+        width: 2.5rem;
+        font-size: 25px;
+        cursor: pointer;
+    }
+
+    .img-slide {
+        max-width: 340px;
+        width: 100%;
+        height: 210px;
+    }
+
+    .section-feature{
+       font-size: 18px ;
+    }
+    
+    .footer-logo {
+        height: 50px;
+    }
+
+    .footer__item {
+        font-size:12px;
+    }
+
+    .footer p{
+        font-size:12px;
+    }
+  }
+  
+
+
+
+
+  @media only screen and (max-width: 636px) {
+
+    .header-background {
+        height: 400px;
+    }
+
+    .nav {
+        height: 3rem;
+        display:none;
+    }
+
+
+    .header-logo {
+        height: 30px;
+    } 
+    
+    nav a {
+        font-size: 9px;
+    }
+    
+    .nav__link--btn {
+        padding: 3px 4px;
+    } 
+
+    .row{
+        bottom: -190px;
+    }
+    
+    .row-row {
+        max-width: 110px;
+        width: 100%;
+        height: 122px;
+      }
+    .row-img {
+        width: 15px;
+    }
+    .row-row h2 {
+        font-size: 8px;
+    }
+    
+    .row-row p {
+        font-size: 6px;      
+    }
+
+    .middle-text {
+        max-width: 368px;
+        height: 120px;
+    }
+    
+    .middle-header {
+        font-size: 20px;
+    }
+    
+    .middle-text p {
+        font-size: 10px;
+    }
+    
+    .middle-btn {
+        font-size:6px;
+    }
+
+    .section-logo {
+        height: 40px;
+    }
+    
+    .section--header {
+        font-size: 20px;
+    }
+
+    .price-grid {
+        height: 957px;
+    }
+    
+    .card {
+        max-width: 130px;
+        width: 100%;
+        height: 230px;
+    }
+    
+    .card-img {
+        max-width: 100px;
+        width: 100%;
+        height: 70px;
+    }
+    
+    .card-button {
+        max-width: 40px;
+        height: 10px;
+        bottom: 160px;
+
+    }
+    
+    
+    .card-button h2 {
+        font-size: 7px;
+    }
+    
+    .card p {
+        font-size: 6px;
+    }
+    
+    .card-header {
+        max-width: 120px;
+        width: 100%;
+        height: 100px;
+    }
+    
+    .card-header-h2 {
+        font-size: 7px;
+    }
+    
+    .btn-card {
+        font-size: 7px;
+    }
+
+    .operations {
+        max-width: 70rem;
+    }
+
+    .operations p{
+        font-size:10px;
+    }
+
+    .btn {
+        font-size: 1rem;
+        padding: 0.5rem 2.5rem;
+    }
+    
+    .operations__tab {
+        font-size: 12px;
+        padding: 8px 20px;
+    }
+    
+    
+    .operations__content {
+        font-size: 1rem;
+        padding: 2rem 5rem 6rem 5rem;
+    }
+
+    
+    .operations__header {
+        font-size:12px;
+    }
+
+    .section--header {
+        font-size: 11px;
+    }
+
+    
+    .email-header-div {
+        max-width: 200px;
+        width: 100%;
+        height: 130px;
+    }
+    
+    .email-div img {
+        max-width: 140px;
+        width: 100%;
+        height: 100px;
+    }
+    
+    .em-inp {
+        padding: 6px;
+        font-size:7px;
+    }
+    
+    .email-div h2 {
+        font-size: 8px;
+    }
+    
+    .email-div p {
+        font-size: 7px;
+    }
+
+    .email-div{
+        max-width:400px;
+        height:300px;
+    }
+
+
+    .slider{
+        max-width: 45rem;
+        height: 300px;
+    }
+    
+    .slide {
+        width: 100%;
+        height: 280px;
+    }
+    
+    
+    .slider__btn--left {
+        left: 6%;
+        transform: translate(-20%, -20%);
+    }
+    
+    .slider__btn--right {
+        right: 6%;
+        transform: translate(20%, -20%);
+    }
+    
+    .slider__btn {
+        position: absolute;
+        top: 45%;
+        z-index: 10;
+        border: none;
+        background-color:#E76F51;
+        font-family: inherit;
+        color: #333;
+        border-radius: 50%;
+        height: 2.5rem;
+        width: 2.5rem;
+        font-size: 25px;
+        cursor: pointer;
+    }
+
+    .img-slide {
+        max-width: 340px;
+        width: 100%;
+        height: 210px;
+    }
+
+    .section-feature{
+       font-size: 12px ;
+    }
+    
+    .footer-logo {
+        height: 50px;
+    }
+
+    .footer__item {
+        font-size:12px;
+    }
+
+    .footer p{
+        font-size:12px;
+    }
+  }
+  

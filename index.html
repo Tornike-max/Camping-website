@@ -13,10 +13,12 @@
     />
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css">
+    <script src="https://kit.fontawesome.com/5536c85188.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <div class="header-background">
-      <nav class="nav">
+      <nav class="nav" id="navBarLinks">
         <ul class="nav-tags">
           <img
             class="header-logo"
@@ -33,10 +35,10 @@
             <a class="nav__link" href="#section--2">Events</a>
           </li>
           <li class="nav-items">
-            <a class="nav__link" href="#section--2">Blog</a>
+            <a class="nav__link" href="#section--3">Gallery</a>
           </li>
           <li class="nav-items">
-            <a class="nav__link" href="#section--2">Reservation</a>
+            <a class="nav__link" href="#section--4">Reservation</a>
           </li>
 
           <li class="nav-items">
@@ -46,6 +48,9 @@
           </li>
         </ul>
       </nav>
+      <div class="toggle-button" id="burgerBar">
+        <i class="fa-solid fa-bars"></i>
+      </div>
 
       <div class="middle-text">
         <h1 class="middle-header">
@@ -368,6 +373,38 @@
     </section>
 
     <section class="section" id="section--3">
+      <div class="section__title">
+        <h2 class="section-feature">Get Back to Nature with our Camping Experience</h2>
+      </div>
+
+      <div class='slider'>
+
+         <div class="slide slide-1">
+          <img class="img-slide" src="images/dino-reichmuth-pl1mhwMctJc-unsplash.jpg" alt="office">
+         </div>
+
+         <div class="slide slide-2">
+          <img  class="img-slide" src="images/jack-sloop-qelGaL2OLyE-unsplash.jpg" alt="office">
+         </div>
+
+         <div class="slide slide-3">
+          <img class="img-slide" src="images/kevin-schmid-AvEY5UPoJZM-unsplash.jpg" alt="office">
+         </div>
+
+         <div class="slide slide-4">
+          <img class="img-slide" src="images/clay-banks-Ppz6b-YUDHw-unsplash.jpg" alt="office">
+         </div>
+
+         <button class="slider__btn slider__btn--left">&larr;</button>
+         <button class="slider__btn slider__btn--right">&rarr;</button>
+         <div class="dots"></div>
+         
+      </div>
+    </section>
+
+    
+
+    <section class="section" id="section--4">
       <div class="email-div">
         <div class="email-header-div">
           <h2>Let's Stay in Touch</h2>
@@ -375,7 +412,7 @@
             Get travel planning ideas, helpful tips, and stories from our
             visitors delivered right to your inbox.
           </p>
-          <input
+          <input class="em-inp"
             type="email"
             placeholder="Email address"
             style="padding: 15px; font-size: 14px"
